@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website SMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .hero {
+            background: url('bg sekolah.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            background-color: rgba(0, 0, 0, 0.50); /* Warna hitam dengan transparansi */
+            background-blend-mode: overlay; /* Mencampur warna dan gambar */
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #5c5c5c;
+        }
+        .calendar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .calendar table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .calendar th, .calendar td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: center;
+        }
+        .calendar th {
+            background-color: #f4f4f4;
+        }
+        .calendar td.today {
+            background-color: #28a745;
+            color: white;
+        }
+        .clock {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="DB Utama.html">SMA Modern Darusa'adah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="DB Utama.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Profile.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Akademik.html">Akademik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kegiatan.html">Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Selamat Datang di SMA Modern</h1>
+            <p>Menyiapkan Generasi Unggul dan Berkarakter</p>
+        </div>
+    </section>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-md-8">
+                <h2 class="text-center">Beranda</h2>
+                <p class="text-center">Selamat datang di website resmi SMA Modern. Di sini Anda dapat menemukan informasi tentang sekolah, akademik, kegiatan siswa, dan kontak kami.</p>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <div class="calendar">
+                        <h4>Kalender</h4>
+                        <div id="calendar"></div>
+                    </div>
+                    <div class="clock">
+                        <h4>Jam</h4>
+                        <p id="clock">--:--:--</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Fasilitas Online Section -->
+<section class="py-5" style="background-color: #0d3a4ebd; color: white;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <div class="container">
+        <h2 class="text-center mb-4">FASILITAS ONLINE</h2>
+        <div class="row text-center">
+            <!-- Media Sosial -->
+            <div class="col-md-4 mb-4">
+                <div class="icon mb-3">
+                    <i class="bi bi-globe" style="font-size: 2rem;"></i>
+                </div>
+                <h5>Media Sosial</h5>
+                <p>Melalui website ini, seluruh siswa dapat mengakses materi pembelajaran dan informasi sekolah secara cepat.</p>
+            </div>
+            <!-- Free Wifi -->
+            <div class="col-md-4 mb-4">
+                <div class="icon mb-3">
+                    <i class="bi bi-wifi" style="font-size: 2rem;"></i>
+                </div>
+                <h5>Free Wifi</h5>
+                <p>Sekolah ini dilengkapi dengan Wifi yang dapat diakses di seluruh lingkungan sekolah.</p>
+            </div>
+            <!-- Laboratorium Komputer -->
+            <div class="col-md-4 mb-4">
+                <div class="icon mb-3">
+                    <i class="bi bi-laptop" style="font-size: 2rem;"></i>
+                </div>
+                <h5>Laboratorium Komputer</h5>
+                <p>Fasilitas pembelajaran modern yang meliputi komputer lengkap untuk mendukung kegiatan belajar.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <!-- Forum -->
+            <div class="col-md-4 mb-4">
+                <div class="icon mb-3">
+                    <i class="bi bi-people" style="font-size: 2rem;"></i>
+                </div>
+                <h5>Forum</h5>
+                <p>Survei atau masukan kritik dan saran yang membangun untuk kemajuan sekolah.</p>
+            </div>
+            <!-- PPDB -->
+            <div class="col-md-4 mb-4">
+                <div class="icon mb-3">
+                    <i class="bi bi-pencil-square" style="font-size: 2rem;"></i>
+                </div>
+                <h5>PPDB</h5>
+                <p>Dukungan pendaftaran siswa baru secara online yang mudah dan cepat.</p>
+            </div>
+            <!-- Sistem Informasi Sekolah -->
+            <div class="col-md-4 mb-4">
+                <div class="icon mb-3">
+                    <i class="bi bi-info-circle" style="font-size: 2rem;"></i>
+                </div>
+                <h5>Sistem Informasi Sekolah</h5>
+                <p>Informasi kegiatan pembelajaran, absensi, jadwal belajar, serta perkembangan siswa secara online.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>INFO</h5>
+                    <p>SMA Modern</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="pengumuman1.pdf" target="_blank" class="text-success">
+                                <i class="bi bi-file-earmark-text"></i> Pengumuman Kegiatan Akhir Tahun
+                            </a>
+                        </li>
+                        <li>
+                            <a href="jadwal-ujian.pdf" target="_blank" class="text-success">
+                                <i class="bi bi-file-earmark-text"></i> Jadwal Ujian Akhir Semester
+                            </a>
+                        </li>
+                        <li>
+                            <a href="daftar-nilai.pdf" target="_blank" class="text-success">
+                                <i class="bi bi-file-earmark-text"></i> Daftar Nilai Siswa
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4">
+                    <h5>CONTACT US</h5>
+                    <p>Jl. Pendidikan No. 1, Indonesia</p>
+                    <p>Phone: 021-123456</p>
+                    <p>Email: sma@example.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>GET SOCIAL</h5>
+                    <p>
+                        <a href="#" class="text-white">Facebook</a> | 
+                        <a href="#" class="text-white">Twitter</a> | 
+                        <a href="#" class="text-white">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <p class="mt-3">&copy; 2024 SMA Modern. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        function generateCalendar() {
+            const calendarElement = document.getElementById('calendar');
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = now.getMonth();
+            const today = now.getDate();
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+            const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+            let calendarHTML = `<h5>${monthNames[month]} ${year}</h5>`;
+            calendarHTML += '<table><tr>';
+            const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+            days.forEach(day => {
+                calendarHTML += `<th>${day}</th>`;
+            });
+            calendarHTML += '</tr><tr>';
+
+            for (let i = 0; i < firstDay; i++) {
+                calendarHTML += '<td></td>';
+            }
+
+            for (let day = 1; day <= daysInMonth; day++) {
+                if ((firstDay + day - 1) % 7 === 0 && day !== 1) {
+                    calendarHTML += '</tr><tr>';
+                }
+                if (day === today) {
+                    calendarHTML += `<td class="today">${day}</td>`;
+                } else {
+                    calendarHTML += `<td>${day}</td>`;
+                }
+            }
+
+            calendarHTML += '</tr></table>';
+            calendarElement.innerHTML = calendarHTML;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+        generateCalendar();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
