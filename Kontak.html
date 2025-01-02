@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - SMA Modern</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        .hero {
+            background: url('bg sekolah.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            background-color: rgba(0, 0, 0, 0.50); /* Warna hitam dengan transparansi */
+            background-blend-mode: overlay; /* Mencampur warna dan gambar */
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="DB Utama.html">SMA Modern Darusa'adah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="DB Utama.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Profile.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Akademik.html">Akademik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Kegiatan.html">Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PPDB.html">PPDB</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Kontak Kami</h1>
+            <p>Hubungi SMA Modern Darusa'adah untuk informasi lebih lanjut</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="container mt-4">
+        <h2 class="text-center">Formulir Kontak</h2>
+        <p class="text-center">Silakan isi formulir di bawah ini untuk menghubungi kami:</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="proses_formulir.php" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email Anda" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tuliskan pesan Anda di sini" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="text-center">Alamat Kami</h2>
+            <p class="text-center">Jl. Pendidikan No. 123, Kota Edukasi, Indonesia</p>
+            <p class="text-center">Email: info@smamodern.sch.id | Telepon: +62 123 4567 890</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SMA Modern. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
